@@ -15,7 +15,7 @@ import java.util.StringTokenizer;
 /**
  * Hello world!
  */
-public class App {
+public class CsvSqlConverter {
     public static void main(String[] args) throws IOException {
         ICsvListReader listReader = null;
 
@@ -84,7 +84,7 @@ public class App {
                     }
                     else if (item instanceof Number) {
                         output.print(item);
-                        fieldLength = ((Number) item).toString().length();
+                        fieldLength = item.toString().length();
                     } else {
                         output.print("'" + item.toString().replace("'", "''") + "'");
                         fieldLength = item.toString().length();
