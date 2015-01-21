@@ -8,6 +8,8 @@ java CsvSqlConverter --csv input.csv --table table --output output.sql --types t
 
 Where
 
+| Name | Description |
+| ---- | ---- |
 | input.csv | name of the CSV file to load |
 | table | name of the SQL table to INSERT into |
 | output.sql | name of the output SQL file |
