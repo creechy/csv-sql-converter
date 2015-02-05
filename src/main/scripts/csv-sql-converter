@@ -1,0 +1,10 @@
+#!/bin/sh
+
+THISDIR=`dirname $0`
+
+for lib in $THISDIR/../lib/*; do
+  CLASSPATH="$CLASSPATH:$lib"
+done
+export CLASSPATH
+
+exec java org.fakebelieve.CsvSqlConverter "$@"

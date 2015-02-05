@@ -131,7 +131,7 @@ public class CsvSqlConverter {
                 }
             }
 
-            System.out.format(");");
+            System.out.format(") DEFAULT CHARSET=utf8;");
         } finally {
             if (listReader != null) {
                 listReader.close();
