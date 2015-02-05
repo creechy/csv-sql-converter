@@ -101,6 +101,9 @@ public class CsvSqlConverter {
                 output.println(");");
             }
 
+            output.flush();
+            output.close();
+
             System.out.format("CREATE TABLE %s (\n", tableName);
 
             for (int idx = 0; idx < types.length; idx++) {
